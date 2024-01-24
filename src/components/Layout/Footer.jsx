@@ -10,6 +10,7 @@ const Footer = () => {
         <br/>
         <em>We give attention to genuine feedback. </em>
         <strong>All right received by @mbaburgerwala</strong>
+        <a href="https://www.freeprivacypolicy.com/live/81b0685d-6468-4d1a-b591-1a8251f3902c">privacy & policy</a>
       </div>
       <aside>
         <h4>Follow Us</h4>
