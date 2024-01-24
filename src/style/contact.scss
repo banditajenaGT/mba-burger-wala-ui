@@ -1,0 +1,89 @@
+@import "colors";
+
+.contact {
+    height: 100vh;
+    width: 100%;
+    background-color: $violet ;
+    background-image: linear-gradient(to right, $violet, rgb(113, 0, 128));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    >form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 2rem;
+        width: 40%;
+        height: 80%;
+        justify-content: center;
+        border-radius: 10px 0 0 10px;
+
+        >h2 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-family: "Roboto";
+            margin: 2rem 0;
+        }
+
+        >input,
+        >textarea,
+        button {
+            padding: 1rem;
+            outline: none;
+            border: 1px solid $darkviolet;
+            margin: 0.5rem;
+            width: 80%;
+            border-radius: 5px;
+        }
+
+        >button {
+            background-color: $darkviolet;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 1rem;
+
+            &:hover {
+                background-color: $violet;
+            }
+        }
+    }
+
+    .formBorder {
+        width: 200px;
+        height: 80%;
+        background-color: white;
+        border-radius: 0 150px 150px 0;
+        position: relative;
+        >div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0,-50%);
+            display: flex;
+            align-items: center;
+            >img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px) {
+    .contact {
+        height: 70vh;
+
+        >form {
+            width: 90%;
+            height: 90%;
+            border-radius: 10px;
+        }
+
+        .formBorder {
+            display: none;
+        }
+    }
+}

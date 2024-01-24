@@ -1,0 +1,33 @@
+@import "colors";
+
+.login {
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(to right, $violet, $darkviolet);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        background-color: $lightblue;
+        color: $darkblue;
+        outline: none;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 1.1rem;
+        &:hover{
+            background-color:$lightdark;
+            color: white;
+        }
+
+        svg {
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+        }
+    }
+}

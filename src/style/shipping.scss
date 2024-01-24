@@ -1,0 +1,64 @@
+@import "colors";
+
+.shipping {
+    background-color: $darkblue;
+    width: 100%;
+    >main {
+        height: 100%;
+        background-color:$lightblue ;
+        max-width: 800px;
+        margin: auto;
+        padding: 2rem;
+        h1{
+            text-transform: uppercase;
+            text-align: center;
+            margin: 3rem;
+            font: 100 3rem "Roboto";
+            color: $darkblue;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $darkblue;
+            div{
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                label{
+                    white-space: nowrap;
+                }
+                input,select{
+                    font-family: "Roboto";
+                    width: 300px;
+                    padding: 0.5rem 1rem;
+                    outline: none;
+                    border: 1px solid rgba(0, 0, 0, 0.623);
+                    border-radius: 5px;
+                    margin: 1rem;
+                    font-size: 1rem;
+                }
+            }
+            button{
+                background-color: $darkblue;
+                color: $lightblue;
+                outline: none;
+                border: none;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                margin: 1rem;
+                text-align: center;
+                cursor: pointer;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px) {
+        .shipping main form div{
+            flex-direction: column;
+            width: 100%;
+        }
+}

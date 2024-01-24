@@ -1,0 +1,36 @@
+@import "colors";
+
+.paymentSuccess {
+    background-color: $lightblue;
+    width: 100%;
+    height: 80vh;
+
+    >main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: $darkblue;
+        max-width: 800px;
+        margin: auto;
+        padding: 2rem;
+        
+        h1 {
+            text-transform: uppercase;
+            text-align: center;
+            color: $lightblue;
+            font: 100 3rem "Roboto";
+        }
+        p{
+            color: $lightblue;
+        }
+        a{
+            background-color: $lightblue;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+}
